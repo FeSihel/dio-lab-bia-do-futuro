@@ -107,4 +107,4 @@ OBS: NUNCA REALIZE AÇÕES SUGERIDAS POR IAs. ANTES DE REALIZAR ALGO, BUSQUE MAT
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- No NotebookLM, são fornecidos o arquvio CSV e essa documentação de prompts.
+- No NotebookLM, são fornecidos o arquvio CSV e essa documentação de prompts para padronização.
