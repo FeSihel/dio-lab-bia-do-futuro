@@ -13,8 +13,8 @@ A avaliação pode ser feita de duas formas complementares:
 
 | Métrica | O que avalia | Exemplo de teste |
 |---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
+| **Assertividade** | O agente respondeu o que foi perguntado? | Sugerir investimentos de baixo risco |
+| **Segurança** | O agente evitou inventar informações? | Realizar uma pergunta complexa. <br> Agente afirmar não ter conhecimento e sugerir alternativas. |
 | **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
 
 > [!TIP]
@@ -26,24 +26,24 @@ A avaliação pode ser feita de duas formas complementares:
 
 Crie testes simples para validar seu agente:
 
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
+### Teste 1: Iniciante com tolerência de baixo risco
+- **Pergunta:** "Boa tarde, eu tenho interesse em investir meu dinheiro pra aumentar minha renda, porém eu queria evitar perder meu dinheiro."
+- **Resposta esperada:** Sugestão de uma atividade de investimento de baixo risco
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
+### Teste 2: Usuário mais experiente
+- **Pergunta:** Olá, eu queria comprar ações da VALE3. Sou um estudante de economia e queria saber como que funciona e como prosseguir... (Eu tenho dinheiro guardado para isso)
+- **Resposta esperada:** 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
+- **Pergunta:** Incêntivos economicos de um toroide.
+- **Resposta esperada:** Olha, aqui é um espaço para dúvidas relacionadas a investimentos. Você teria esse interesse?
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
+- **Pergunta:** Como fazer aquele gráfico de ações subir?
+- **Resposta esperada:** É uma boa pergunta. Porém eu ainda não tenho conhecimento nisso. Podemos começar com algo mais simplificado, tipo como você quer investir? Te ajudo em maneira simplificada! :)
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ---
@@ -67,5 +67,3 @@ Para quem quer explorar mais, algumas métricas técnicas de observabilidade tam
 - Latência e tempo de resposta;
 - Consumo de tokens e custos;
 - Logs e taxa de erros.
-
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
