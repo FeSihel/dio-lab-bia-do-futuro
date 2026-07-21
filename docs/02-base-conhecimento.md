@@ -6,13 +6,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+| `perfis_investidores.csv` | CSV | Exemplos de perfis e desejos. |
 
 ---
 
@@ -20,7 +14,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Remoção de arquivos de exemplo e adição de arquvio autoral. [Gerado por IA e modificado]
 
 ---
 
@@ -29,12 +23,12 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Serão incluídos como base de treinamento do Agente,
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Ambos agente e usuário possuiram acesso do arquivo para referências.
 
 ---
 
@@ -43,13 +37,27 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 > Mostre um exemplo de como os dados são formatados para o agente.
 
 ```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+Perfil 1: Conservador
+Cliente Exemplo: Maria, 45 anos
+Desejo / Objetivo: Guardar dinheiro para uma emergência / Preservação de capital.
+Perfil de Risco: Tolerância baixa (não quer risco de perdas).
+Horizonte: Curto prazo (1 a 3 anos).
+Aplicação Prática: Tesouro Selic ou CDBs de liquidez diária.
+Significado: O dinheiro rende diariamente com a taxa básica de juros, permitindo resgate a qualquer momento sem surpresas.
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
+Perfil 2: Moderado
+Cliente Exemplo: Carlos, 32 anos
+Desejo / Objetivo: Comprar um carro daqui a 4 anos / Crescimento gradual do patrimônio.
+Perfil de Risco: Tolerância média (aceita pequenas variações).
+Horizonte: Médio prazo (3 a 5 anos).
+Aplicação Prática: Fundos Multimercado, Tesouro IPCA+ ou LCI/LCA.
+Significado: Mistura segurança com um toque de risco para superar a inflação ao longo dos anos.
+
+Perfil 3: Arrojado
+Cliente Exemplo: Ana, 24 anos
+Desejo / Objetivo: Construir independência financeira / Maximizar rentabilidade.
+Perfil de Risco: Tolerância alta (não se importa com oscilações no curto prazo).
+Horizonte: Longo prazo (mais de 5 anos).
+Aplicação Prática: Fundos de Ações, ETFs globais e FIIs (Fundos Imobiliários).
+Significado: Envolve ser sócio de grandes empresas ou imóveis, buscando ótimos retornos de longo prazo apesar da volatilidade.
 ```
