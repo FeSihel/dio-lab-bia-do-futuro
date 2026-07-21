@@ -33,7 +33,7 @@ Crie testes simples para validar seu agente:
 
 ### Teste 2: Usuário mais experiente
 - **Pergunta:** Olá, eu queria comprar ações da VALE3. Sou um estudante de economia e queria saber como que funciona e como prosseguir... (Eu tenho dinheiro guardado para isso)
-- **Resposta esperada:** 
+- **Resposta esperada:** Sugestão de procedimentos ao realizar investimentos de alto risco. 
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
