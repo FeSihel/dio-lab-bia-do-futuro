@@ -23,7 +23,7 @@ Remoção de arquivos de exemplo e adição de arquvio autoral. [Gerado por IA e
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-Serão incluídos como base de treinamento do Agente,
+Serão incluídos como base de treinamento do Agente.
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
