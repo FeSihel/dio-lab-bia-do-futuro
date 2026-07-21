@@ -7,7 +7,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
 | `perfis_investidores.csv` | CSV | Exemplos de perfis e desejos. |
-| `prompt_file` | MD | Padronizar prompts e comportamentos. |
+| `prompt_file` | TXT | Padronizar prompts e comportamentos. |
 
 ---
 
