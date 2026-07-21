@@ -43,7 +43,7 @@ Formal, porém acessível
 
 ## Arquitetura
 
-### Diagrama (?)
+### Diagrama
 
 ```mermaid
 flowchart TD
