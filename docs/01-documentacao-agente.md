@@ -55,12 +55,12 @@ flowchart TD
     E --> F[Resposta]
 ```
 
-### Componentes (?)
+### Componentes
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
+| Interface | NotebookLM |
+| LLM | NotebookLM |
 | Base de Conhecimento | JSON de cliente fictício |
 | Validação | Checagem de informações geradas |
 
