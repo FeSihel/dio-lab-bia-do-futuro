@@ -28,22 +28,22 @@ Crie testes simples para validar seu agente:
 
 ### Teste 1: Iniciante com tolerência de baixo risco
 - **Pergunta:** "Boa tarde, eu tenho interesse em investir meu dinheiro pra aumentar minha renda, porém eu queria evitar perder meu dinheiro."
-- **Resposta esperada:** Sugestão de uma atividade de investimento de baixo risco
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta esperada:** Sugestão de investimentos de baixo risco
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 2: Usuário mais experiente
 - **Pergunta:** Olá, eu queria comprar ações da VALE3. Sou um estudante de economia e queria saber como que funciona e como prosseguir... (Eu tenho dinheiro guardado para isso)
 - **Resposta esperada:** Sugestão de procedimentos ao realizar investimentos de alto risco. 
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** Incêntivos economicos de um toroide.
 - **Resposta esperada:** Dizer que a pergunta está fora do escopo.
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
-### Teste 4: Informação inexistente
+### Teste 4: Informação inexistente dentro do tema
 - **Pergunta:** Como fazer aquele gráfico de ações subir?
-- **Resposta esperada:** Dizer que não possui conhecimento nisso e sugerir materiais e busca de profissionais
+- **Resposta esperada:** Esclarecer dúvidas e fornecer respostas sobre como funcional
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 5: Informação sensível
@@ -58,10 +58,13 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Agente convidativo, fornece sugestões com nível de risco corretos com didática.
+- Fornece perguntas e idéias norteadoras no final da resposta.
+- Quando o Agente recebe uma pergunta fora do escopo, ele avisa e sugere assuntos dentro da base de treinamento como perfis e atividades de investimento.
+- Consegue fornecer contexto às perguntas inexistentes dentro do tema.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Ser mais direto a ponto, porém não é visto como problema e a forma de linguagem do Agente está em tom correto.
 
 ---
 
