@@ -38,4 +38,5 @@ O NotebookLM carrega em sua base de treinamentos um documento contendo exemplos 
 
 > Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
-[Link do vídeo]
+ <a href="https://youtu.be/0Gszf66kr28">YOUTUBE</a>
+ <a href="https://notebooklm.google.com/notebook/93f03260-e74d-45f4-868e-a68521da9311">Agente de IA</a>
